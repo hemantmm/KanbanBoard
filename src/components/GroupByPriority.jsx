@@ -82,5 +82,3 @@ const GroupByPriority = ({ tickets, users }) => {
 };
 
 export default GroupByPriority;
-
-

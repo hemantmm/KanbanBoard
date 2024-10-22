@@ -1,47 +1,118 @@
-.card
-{
+.card {
     background-color: white;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 250px;
-    padding: 15px;
-    box-shadow: 0 3px 4px rgba(0,0,0,0.1);
+    justify-content: space-between;
+    width: 100%;
+    padding: 16px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+    min-height: 150px; 
+    margin-bottom: 20px;
 }
 
-.card-section, .tag
-{
+.card-section, .tag {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 5px;
 }
 
-.mid h6
-{
+.mid h6 {
     font-weight: 600 !important;
+    word-break: break-word;
 }
 
-.bottom
-{
+.bottom {
     margin-top: 10px;
 }
 
-.tag
-{
+.top, .mid, .bottom {
+    flex-grow: 1;
+}
+
+.tag {
     padding: 5px;
     border: 1px solid #e1e1e1;
     border-radius: 5px;
 }
 
-.bottom p
-{
+.bottom p {
     color: #666;
     margin: 0;
 }
 
-.top h5
-{
+.top h5 {
     color: #acacac;
+}
+
+/* Media Queries */
+
+@media (max-width: 320px) {
+    .group-by-priority, .group-by-status, .group-by-user {
+        flex-direction: column; 
+        width: 100%; 
+    }
+} 
+@media (max-width: 375px) {
+    .card {
+        width: 100%; 
+        padding: 16px;
+        min-height: 150px;
+    }
+
+    .group-by-priority, .group-by-status, .group-by-user {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+@media (min-width: 425px) {
+    .card {
+        width: 100%;
+        padding: 16px;
+        min-height: 160px;
+    }
+
+    .group-by-priority, .group-by-status, .group-by-user {
+        flex-direction: column;
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+}
+@media (min-width: 768px) {
+    .card {
+        width: 250px; 
+        padding: 18px;
+        min-height: 180px;
+    }
+
+    .group-by-priority, .group-by-status, .group-by-user {
+        flex-direction: row; 
+        width: 100%; 
+    }
+}
+@media (min-width: 1024px) {
+    .card {
+        width: 248px; 
+        padding: 20px;
+        min-height: 170px;
+    }
+
+    .group-by-priority, .group-by-status, .group-by-user {
+        flex-direction: row;
+        justify-content: space-between; 
+    }
+}
+@media (min-width: 1440px) {
+    .card {
+        width: 300px;
+        padding: 20px;
+        min-height: 200px;
+    }
+
+    .group-by-priority, .group-by-status, .group-by-user {
+        flex-direction: row;
+        gap: 20px;
+    }
 }
