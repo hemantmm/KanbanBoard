@@ -1,0 +1,36 @@
+.group-by-priority
+{
+    display: flex;
+    flex: 1;
+    width: 100%;
+    padding: 20px;
+    gap: 10px;
+}
+
+.priority
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.priority-title
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.priority-image
+{
+    width: 30%;
+}
+
+.left, .right
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

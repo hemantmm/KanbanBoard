@@ -1,0 +1,36 @@
+.group-by-status
+{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    width: 100%;
+    padding: 20px;
+    gap: 10px;
+}
+
+.status
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.status-title
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.left, .right
+{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.status-image
+{
+    width: 15%;
+}
