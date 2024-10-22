@@ -1,0 +1,90 @@
+.navbar
+{
+    background-color: white;
+    width: 100%;
+    padding: 15px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+}
+
+.selection
+{
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    padding: 15px;
+    z-index: 10;
+    background-color: white;
+    transition: all 0.1s ease;
+    transform-origin: top left;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 250px;
+    border: 1px solid rgb(223,223,223);
+}
+
+.options
+{
+    display: flex;
+    padding: 5px;
+    transition: all 0.1s ease;
+    border-radius: 5px;
+    width: fit-content;
+    gap: 5px;
+    align-items: center;
+    border: 1px solid rgb(192,192,192);
+}
+
+.ordering, .grouping
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    align-items: center;
+}
+
+.setting
+{
+    transform: rotate(90deg);
+}
+
+.arrow
+{
+    transition: all 0.1s ease;
+}
+
+.display
+{
+    background-color: white;
+    border-radius: 5px;
+}
+
+.options:hover
+{
+    border: 2px solid rgb(134,134,134);
+    cursor: pointer;
+}
+
+.select
+{
+    border: none;
+    outline: none;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.1 ease;
+    border: 1px solid rgb(192,192,192);
+}
+
+.options p
+{
+    user-select: none;
+}
+
+.select:hover
+{
+    border: 1px solid rgb(134,134,134);
+}
