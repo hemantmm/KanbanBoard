@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
-// import useGrouping from './contexts/useGrouping';
-// import GroupByUser from './components/GroupByUser';
-// import GroupByStatus from './components/GroupByStatus';
-// import GroupByPriority from './components/GroupByPriority';
+import useGrouping from './contexts/useGrouping';
+import GroupByUser from './components/GroupByUser';
+import GroupByStatus from './components/GroupByStatus';
+import GroupByPriority from './components/GroupByPriority';
 
 function App() {
   const [tickets, setTickets] = useState([]);
@@ -20,12 +20,12 @@ function App() {
   }
   , []);
 
-  // const {groupingId} = useGrouping();
+  const {groupingId} = useGrouping();
 
   return (
     <div className="app">
       <Navbar />
-      {/* {
+      {
         groupingId === 0 ? (
           <GroupByStatus tickets={tickets} users={users} />) :
         groupingId === 1 ? (
@@ -33,7 +33,7 @@ function App() {
         ) : (
           <GroupByPriority tickets={tickets} users={users} />
         )
-      } */}
+      }
     </div>
   );
 }
